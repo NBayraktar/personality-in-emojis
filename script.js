@@ -7,7 +7,7 @@ const unshiftBtn = document.getElementById('btn-unshift');
 const pushBtn = document.getElementById('btn-push');
 const shiftBtn = document.getElementById('btn-shift');
 const popBtn = document.getElementById('btn-pop');
-
+nameEl.innerHTML = `${getName} Emojis`
 unshiftBtn.addEventListener('click', function () {
   if (inputEl.value) {
     myEmojis.unshift(inputEl.value);

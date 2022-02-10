@@ -12,12 +12,31 @@ const popBtn = document.getElementById('btn-pop');
 
 
 unshiftBtn.addEventListener('click', function () {
-
   if (inputEl.value) {
     myEmojis.unshift(inputEl.value);
-    renderEmojis()
+    inputEl.value = '';
+    renderEmojis();
   }
 })
+
+pushBtn.addEventListener('click', function () {
+  if (inputEl.value) {
+    myEmojis.push(inputEl.value);
+    inputEl.value = '';
+    renderEmojis();
+  }
+})
+
+shiftBtn.addEventListener('click', function () {
+  myEmojis.shift();
+  renderEmojis();
+})
+
+popBtn.addEventListener('click', function () {
+  myEmojis.pop();
+  renderEmojis();
+})
+
 
 
 function renderEmojis() {

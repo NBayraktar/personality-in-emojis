@@ -1,0 +1,75 @@
+body {
+  height: 100vh;
+  background: rgb(98, 255, 110);
+  background: linear-gradient(
+    0deg,
+    rgb(137, 231, 219) 0%,
+    rgb(21, 42, 54) 100%
+  );
+  font-family: Baloo;
+}
+
+.wraper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.h1 {
+  font-weight: normal;
+  font-size: 3rem;
+  color: rgb(137, 231, 219);
+}
+.emoji-div {
+  margin: 5rem auto;
+  font-size: 4rem;
+  background-color: rgba(250, 235, 215, 0.1);
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.section-two {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.sect-btn-left,
+.sect-btn-right {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.btn {
+  font-variant: small-caps;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  padding: 0.2rem 1.5rem;
+  border-radius: 0.2rem;
+  background-color: rgba(21, 42, 54, 0.6);
+  color: rgb(137, 231, 219);
+}
+
+.btn:hover {
+  background-color: rgba(21, 42, 54, 0.3);
+  color: #222;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+
+.input-emoji {
+  text-align: center;
+  border: none;
+  outline: none;
+  border-radius: 0.2rem;
+  font-size: 1.5rem;
+  background-color: rgba(21, 42, 54, 0.1);
+}
+
+.sect-input {
+  display: flex;
+}
